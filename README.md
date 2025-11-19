@@ -3,7 +3,6 @@
 -----
 
 **Module:** Modern Software Development  
-**Duration:** 60-90 Minutes  
 **Tech Stack:** Python 3.10+, pip, pytest, GitHub Actions, GitHub Copilot
 
 -----
@@ -39,10 +38,10 @@ flowchart LR
         PR[👀 AI Code Review]
     end
 
-    subgraph "CI Pipeline (Runner)"
-        S1[📦 Install Deps (pip)]
-        S2[✨ Lint (Flake8/Ruff)]
-        S3[🧪 Test (pytest)]
+    subgraph "CI Pipeline Runner"
+        S1[📦 Install Deps pip]
+        S2[✨ Lint Flake8 Ruff]
+        S3[🧪 Test pytest]
         S4[🧠 AI Inference]
     end
 
