@@ -49,7 +49,25 @@ flowchart LR
 -----
 
 
-## Part 1: Generative CI/CD
+## Part 1: Explore the App
+
+Before we build the pipeline, let's verify the application works.
+
+1.  **Run the App**: Open the terminal and run the following command:
+    ```bash
+    python3 -m flask --app startup run
+    ```
+2.  **View the App**:
+    *   You should see a notification in the bottom right saying "Your application running on port 5000 is available."
+    *   Click **Open in Browser**.
+    *   Click around the links (Home, About, Contact) to see the simple Flask app.
+3.  **Stop the App**:
+    *   Go back to the terminal.
+    *   Press `Ctrl+C` to stop the server.
+
+-----
+
+## Part 2: Generative CI/CD
 
 *Goal: Use Copilot Agent Mode to generate the pipeline files automatically.*
 
@@ -78,7 +96,7 @@ Instead of writing YAML manually or copy-pasting, we will ask the AI Agent to cr
 
 -----
 
-## Part 2: Pipeline Updates
+## Part 3: Pipeline Updates
 
 *Goal: Use Copilot to write shell scripts without knowing the syntax.*
 
@@ -109,7 +127,7 @@ We want to add a step to our pipeline that prints the version of Flask currently
 
 -----
 
-## Part 3: The "Fix It" Loop
+## Part 4: The "Fix It" Loop
 
 *Goal: Simulate a failure and use AI to diagnose it.*
 
@@ -146,7 +164,7 @@ A CI pipeline is useless if you can't fix it when it breaks.
 
 -----
 
-## Part 4: Advanced - Security & Autofix
+## Part 5: Advanced - Security & Autofix
 
 *Goal: Use AI to find security vulnerabilities.*
 
@@ -167,7 +185,7 @@ If your repository is public (or you have GitHub Advanced Security), you can ena
 
 -----
 
-## Part 5: Extension - AI Engineering in CI/CD
+## Part 6: Extension - AI Engineering in CI/CD
 
 *Goal: Use the `ai-inference` action to "think" inside your pipeline.*
 
@@ -220,7 +238,7 @@ We will create a workflow that uses an LLM to automatically categorise new Issue
 
 -----
 
-## Part 6: The AI Teammate (Issues & PRs)
+## Part 7: The AI Teammate (Issues & PRs)
 
 *Goal: Delegate tasks to Copilot and get automated code reviews.*
 
