@@ -256,8 +256,8 @@ In this section, we will treat Copilot not just as a chat bot, but as an agent t
 
 1.  Go to the **Issues** tab on GitHub.
 2.  Click **New Issue**.
-3.  **Title:** "Create a README file"
-4.  **Description:** "Please add a README.md file to the repository. It should explain that this is a Python Flask app for a CI/CD lab. Include instructions on how to install requirements and run the tests."
+3.  **Title:** "Create a info.md file"
+4.  **Description:** "Please add a info.md file to the repository. It should explain that this is a Python Flask app for a CI/CD lab. Include instructions on how to install requirements and run the tests."
 5.  **Submit** the issue.
 6.  **Assign it:** Look at the right-hand sidebar. Click **Assignees** and select **Copilot** (or type `@copilot` in a comment).
 7.  **Watch the Magic:**
