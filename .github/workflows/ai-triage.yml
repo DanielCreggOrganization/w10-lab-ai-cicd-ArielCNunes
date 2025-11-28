@@ -1,0 +1,27 @@
+name: AI Triage
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  triage:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Analyze issue with AI
+      uses: actions/ai-inference@v1
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        prompt: |
+          Analyze the following GitHub issue and classify it as one of: Bug, Feature, or Question.
+          
+          Issue Title: ${{ github.event.issue.title }}
+          Issue Body: ${{ github.event.issue.body }}
+          
+          Respond with ONLY the classification (Bug, Feature, or Question) and a brief one-line explanation.
+      id: analyze
+
+    - name: Print triage result
+      run: |
+        echo "Issue Classification: ${{ steps.analyze.outputs.result }}"
